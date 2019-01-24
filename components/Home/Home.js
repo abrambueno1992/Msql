@@ -1,10 +1,5 @@
 const track = new Map();
 var grd = function(fID) {
-  //   if (document.getElementById(fID).value === "analytics") {
-  //     alert("This is the correct input, analytics");
-  //   } else {
-  //     alert("Not expected value:", fID);
-  //   }
   const check = document.getElementById(fID).checked;
   if (track.get(fID) === undefined) {
     track.set(fID, 2);
@@ -19,12 +14,4 @@ var grd = function(fID) {
   if (check === true && num % 2 !== 0) {
     document.getElementById(fID).checked = false;
   }
-
-  //   alert("value passed:", fID);
-  //   attachEventListener(
-  //     document.getElementById("analytics"),
-  //     "mousedown",
-  //     rememberCurrentState,
-  //     false
-  //   );
 };

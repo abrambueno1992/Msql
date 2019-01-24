@@ -66,52 +66,54 @@
           />
         </form>
 
-        <!-- <form> -->
-        <label for="query" class="query-label"> Query Response Time </label>
-        <input type="radio" id="query" name="query" class="query" />
-        <!-- </form> -->
+        <form onclick="grd('query')">
+          <label for="query" class="query-label"> Query Response Time </label>
+          <input type="radio" id="query" name="query" class="query" />
+        </form>
 
-        <!-- <form> -->
-        <label for="concurrency" class="concurrency-label"
-          >High Concurrency</label
-        >
-        <input
-          type="radio"
-          id="concurrency"
-          name="concurrency"
-          class="concurrency"
-        />
-        <!-- </form> -->
-        <!-- <form> -->
-        <label for="data" class="data-label"> Fast Data Ingest</label>
-        <input type="radio" id="data" name="data" class="data" />
-        <!-- </form> -->
+        <form onclick="grd('concurrency')">
+          <label for="concurrency" class="concurrency-label"
+            >High Concurrency</label
+          >
+          <input
+            type="radio"
+            id="concurrency"
+            name="concurrency"
+            class="concurrency"
+          />
+        </form>
+        <form onclick="grd('data')">
+          <label for="data" class="data-label"> Fast Data Ingest</label>
+          <input type="radio" id="data" name="data" class="data" />
+        </form>
         <!-- </div> -->
         <!-- <div> -->
-        <!-- <form> -->
-        <label for="scalability" class="scalability-label"> Scalability</label>
-        <input
-          type="radio"
-          id="scalability"
-          name="scalability"
-          class="scalability"
-        />
-        <!-- </form> -->
+        <form onclick="grd('scalability')">
+          <label for="scalability" class="scalability-label">
+            Scalability</label
+          >
+          <input
+            type="radio"
+            id="scalability"
+            name="scalability"
+            class="scalability"
+          />
+        </form>
 
-        <!-- <form> -->
-        <label for="storage" class="storage-label"> Document storage</label>
-        <input type="radio" id="storage" class="storage" name="storage" />
-        <!-- </form> -->
+        <form onclick="grd('storage')">
+          <label for="storage" class="storage-label"> Document storage</label>
+          <input type="radio" id="storage" class="storage" name="storage" />
+        </form>
 
-        <!-- <form> -->
-        <label for="search" class="search-label"> Full text search</label>
-        <input type="radio" id="search" class="search" name="search" />
-        <!-- </form> -->
+        <form onclick="grd('search')">
+          <label for="search" class="search-label"> Full text search</label>
+          <input type="radio" id="search" class="search" name="search" />
+        </form>
 
-        <!-- <form> -->
-        <label for="price" class="price-label"> Price</label>
-        <input type="radio" id="price" class="price" name="price" />
-        <!-- </form> -->
+        <form onclick="grd('price')">
+          <label for="price" class="price-label"> Price</label>
+          <input type="radio" id="price" class="price" name="price" />
+        </form>
         <!-- </div> -->
         <!-- </form> -->
 
