@@ -16,7 +16,7 @@ var grd = function(fID) {
   }
   for (var [key, value] of track) {
     if (key !== fID) {
-      track.set(key, 0);
+      track.set(key, 1);
       document.getElementById(key).checked = false;
     }
   }
