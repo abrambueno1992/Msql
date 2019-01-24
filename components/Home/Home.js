@@ -14,4 +14,28 @@ var grd = function(fID) {
   if (check === true && num % 2 !== 0) {
     document.getElementById(fID).checked = false;
   }
+  for (var [key, value] of track) {
+    if (key !== fID) {
+      track.set(key, 0);
+      document.getElementById(key).checked = false;
+    }
+  }
 };
+
+$(document).ready(function() {
+  $(".btn-schedule").click(function() {
+    $(".price").hide();
+    const message = document.getElementById("bemail").value;
+
+    console.log(
+      "TESTING, email: ",
+      message,
+      document.getElementById("bemail").value
+    );
+    alert("TESTING, email: ", message, document.getElementById("bemail").value);
+  });
+  // $(".btn-text").click(function() {
+  //   $(".price").hide();
+  //   alert("TESTING");
+  // });
+});
