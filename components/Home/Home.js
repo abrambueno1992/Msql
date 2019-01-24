@@ -1,12 +1,16 @@
 const track = new Map();
 const trackDown = new Map();
-var grd = function(fID) {
+const values = new Map();
+var grd = function(fID, tvalue) {
   const check = document.getElementById(fID).checked;
   if (track.get(fID) === undefined) {
     track.set(fID, 2);
   } else {
     let current = track.get(fID) + 1;
     track.set(fID, current);
+  }
+  if (values.get(fID) === undefined) {
+    values.set(fID, tvalue);
   }
   const num = track.get(fID);
   if (check === false && num % 2 === 0) {
@@ -22,13 +26,16 @@ var grd = function(fID) {
     }
   }
 };
-var grdDown = function(fID) {
+var grdDown = function(fID, rvalue) {
   const check = document.getElementById(fID).checked;
   if (trackDown.get(fID) === undefined) {
     trackDown.set(fID, 2);
   } else {
     let current = trackDown.get(fID) + 1;
     trackDown.set(fID, current);
+  }
+  if (values.get(fID) === undefined) {
+    values.set(fID, rvalue);
   }
   const num = trackDown.get(fID);
   if (check === false && num % 2 === 0) {
@@ -61,6 +68,14 @@ $(document).ready(function() {
         size = key;
       }
     }
+    for (var [key, value] of values) {
+      if (bType === key) {
+        bType = value;
+      }
+      if (size === key) {
+        size = value;
+      }
+    }
     console.log("TESTING, email: ", email, " bType: ", bType, " size: ", size);
     // alert("TESTING, email: ", message, document.getElementById("bemail").value);
   });
@@ -79,6 +94,14 @@ $(document).ready(function() {
     for (var [key, value] of trackDown) {
       if (value === 2) {
         size = key;
+      }
+    }
+    for (var [key, value] of values) {
+      if (bType === key) {
+        bType = value;
+      }
+      if (size === key) {
+        size = value;
       }
     }
     console.log("TESTING, email: ", email, " bType: ", bType, " size: ", size);

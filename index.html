@@ -58,23 +58,23 @@
           <div class="dropdown">
             <button class="dropbtn">Dropdown</button>
             <div class="dropdown-content">
-              <form onclick="grdDown('d-10')">
+              <form onclick="grdDown('d-10', '1-10')">
                 <input type="checkbox" id="d-10" name="d-10" />
                 <label for="d-10">1-10</label>
               </form>
-              <form onclick="grdDown('d-50')">
+              <form onclick="grdDown('d-50', '11-50')">
                 <input type="checkbox" id="d-50" name="d-50" />
                 <label for="d-50">11-50</label>
               </form>
-              <form onclick="grdDown('d-100')">
+              <form onclick="grdDown('d-100', '51-100')">
                 <input type="checkbox" id="d-100" name="d-100" />
                 <label for="d-100">51-100</label>
               </form>
-              <form onclick="grdDown('d-250')">
+              <form onclick="grdDown('d-250', '101-250')">
                 <input type="checkbox" id="d-250" name="d-250" />
                 <label for="d-250">101-250</label>
               </form>
-              <form onclick="grdDown('d-251')">
+              <form onclick="grdDown('d-251', '250+')">
                 <input type="checkbox" id="d-251" name="d-251" />
                 <label for="d-251">250+</label>
               </form>
@@ -90,7 +90,7 @@
         <div class="business-type">
           What is the most important thing to you in a solution?
         </div>
-        <form onclick="grd('analytics')">
+        <form onclick="grd('analytics', 'Real-time Analytics')">
           <label for="analytics" class="analytics-label">
             Real-time Analytics</label
           >
@@ -103,12 +103,12 @@
           />
         </form>
 
-        <form onclick="grd('query')">
+        <form onclick="grd('query', 'Query Response Time')">
           <label for="query" class="query-label"> Query Response Time </label>
           <input type="radio" id="query" name="query" class="query" />
         </form>
 
-        <form onclick="grd('concurrency')">
+        <form onclick="grd('concurrency', 'High Concurrency')">
           <label for="concurrency" class="concurrency-label"
             >High Concurrency</label
           >
@@ -119,13 +119,13 @@
             class="concurrency"
           />
         </form>
-        <form onclick="grd('data')">
+        <form onclick="grd('data', 'Fast Data Ingest')">
           <label for="data" class="data-label"> Fast Data Ingest</label>
           <input type="radio" id="data" name="data" class="data" />
         </form>
         <!-- </div> -->
         <!-- <div> -->
-        <form onclick="grd('scalability')">
+        <form onclick="grd('scalability', 'Scalability')">
           <label for="scalability" class="scalability-label">
             Scalability</label
           >
@@ -137,17 +137,17 @@
           />
         </form>
 
-        <form onclick="grd('storage')">
+        <form onclick="grd('storage', 'Document storage')">
           <label for="storage" class="storage-label"> Document storage</label>
           <input type="radio" id="storage" class="storage" name="storage" />
         </form>
 
-        <form onclick="grd('search')">
+        <form onclick="grd('search', 'Full text search')">
           <label for="search" class="search-label"> Full text search</label>
           <input type="radio" id="search" class="search" name="search" />
         </form>
 
-        <form onclick="grd('price')">
+        <form onclick="grd('price', 'Price')">
           <label for="price" class="price-label"> Price</label>
           <input type="radio" id="price" class="price" name="price" />
         </form>
