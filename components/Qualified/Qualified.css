@@ -26,3 +26,35 @@ body {
   margin-left: 25%;
   margin-top: 25%;
 }
+.main-message {
+  position: absolute;
+  width: 508px;
+  height: 96px;
+  left: 257px;
+  top: 334px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  font-size: 34px;
+  text-align: center;
+
+  color: #4f4f4f;
+}
+.second-message {
+  position: absolute;
+  width: 396px;
+  height: 53px;
+  left: 313px;
+  top: 443px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 16px;
+  text-align: center;
+
+  color: #828282;
+}
