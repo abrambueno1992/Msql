@@ -134,8 +134,8 @@ body {
   position: absolute;
   width: 148px;
   height: 19px;
-  left: 342px;
-  top: 696px;
+  left: 312px;
+  top: 818px;
 
   font-family: Lato;
   font-style: normal;
@@ -150,14 +150,14 @@ body {
   width: 24px;
   height: 24px;
   left: 312px;
-  top: 694px;
+  top: 818px;
 }
 .scalability-label {
   position: absolute;
   width: 148px;
   height: 19px;
-  left: 342px;
-  top: 696px;
+  left: 526px;
+  top: 694px;
 
   font-family: Lato;
   font-style: normal;
@@ -171,7 +171,7 @@ body {
   position: absolute;
   width: 24px;
   height: 24px;
-  left: 312px;
+  left: 526px;
   top: 694px;
 }
 
@@ -179,8 +179,8 @@ body {
   position: absolute;
   width: 148px;
   height: 19px;
-  left: 342px;
-  top: 696px;
+  left: 526px;
+  top: 735px;
 
   font-family: Lato;
   font-style: normal;
@@ -194,15 +194,15 @@ body {
   position: absolute;
   width: 24px;
   height: 24px;
-  left: 312px;
-  top: 694px;
+  left: 526px;
+  top: 735px;
 }
 .search-label {
   position: absolute;
   width: 148px;
   height: 19px;
-  left: 342px;
-  top: 696px;
+  left: 526px;
+  top: 775px;
 
   font-family: Lato;
   font-style: normal;
@@ -216,15 +216,15 @@ body {
   position: absolute;
   width: 24px;
   height: 24px;
-  left: 312px;
-  top: 694px;
+  left: 526px;
+  top: 775px;
 }
 .price-label {
   position: absolute;
   width: 148px;
   height: 19px;
-  left: 342px;
-  top: 696px;
+  left: 526px;
+  top: 818px;
 
   font-family: Lato;
   font-style: normal;
@@ -238,6 +238,6 @@ body {
   position: absolute;
   width: 24px;
   height: 24px;
-  left: 312px;
-  top: 694px;
+  left: 526px;
+  top: 818px;
 }
