@@ -24,7 +24,7 @@ var grd = function(fID) {
 
 $(document).ready(function() {
   $(".btn-schedule").click(function() {
-    $(".price").hide();
+    // $(".price").hide();
     const message = document.getElementById("bemail").value;
 
     console.log(
@@ -32,10 +32,17 @@ $(document).ready(function() {
       message,
       document.getElementById("bemail").value
     );
-    alert("TESTING, email: ", message, document.getElementById("bemail").value);
+    // alert("TESTING, email: ", message, document.getElementById("bemail").value);
   });
-  // $(".btn-text").click(function() {
-  //   $(".price").hide();
-  //   alert("TESTING");
-  // });
+  $(".btn-text").click(function() {
+    // $(".price").hide();
+    // alert("TESTING");
+    const message = document.getElementById("bemail").value;
+
+    console.log(
+      "TESTING, email: ",
+      message,
+      document.getElementById("bemail").value
+    );
+  });
 });
