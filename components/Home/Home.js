@@ -28,10 +28,14 @@ var grd = function(fID, tvalue) {
 };
 var grdDown = function(fID, rvalue) {
   const check = document.getElementById(fID).checked;
+
   if (trackDown.get(fID) === undefined) {
     trackDown.set(fID, 2);
   } else {
     let current = trackDown.get(fID) + 1;
+    if (current >= 3) {
+      current = 1;
+    }
     trackDown.set(fID, current);
   }
   if (values.get(fID) === undefined) {
@@ -43,6 +47,9 @@ var grdDown = function(fID, rvalue) {
   }
   if (check === true && num % 2 !== 0) {
     document.getElementById(fID).checked = false;
+    console.log("false to true", trackDown.get(fID));
+    // trackDown.set(fID, 1);
+    console.log("false to true", trackDown.get(fID));
   }
   for (var [key, value] of trackDown) {
     if (key !== fID) {
@@ -50,6 +57,38 @@ var grdDown = function(fID, rvalue) {
       document.getElementById(key).checked = false;
     }
   }
+  let bType = null;
+  let size = null;
+  for (var [key, value] of track) {
+    if (value === 2) {
+      bType = key;
+    }
+  }
+  for (var [key, value] of trackDown) {
+    if (value === 2) {
+      size = key;
+    }
+  }
+  for (var [key, value] of values) {
+    if (bType === key) {
+      bType = value;
+    }
+    if (size === key) {
+      size = value;
+    }
+  }
+  console.log(
+    "check: ",
+    check.toString(),
+    "getValue:",
+    values.get(fID),
+    "trackDown:",
+    trackDown.get(fID),
+    "size: ",
+    size,
+    "size === 1-10",
+    size === "1-10"
+  );
 };
 
 $(document).ready(function() {
