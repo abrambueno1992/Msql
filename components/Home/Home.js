@@ -76,6 +76,16 @@ $(document).ready(function() {
         size = value;
       }
     }
+    if (
+      size === "​ 1-10" ||
+      bType === "Document​ ​ Storage" ||
+      bType === "Full​ ​ Text​ ​ Search" ||
+      bType === "Price"
+    ) {
+      window.location.href = "./components/Unqualified/Unqualified.html";
+    } else {
+      window.location.href = "./components/Qualified/Qualified.html";
+    }
     console.log("TESTING, email: ", email, " bType: ", bType, " size: ", size);
     // alert("TESTING, email: ", message, document.getElementById("bemail").value);
   });
@@ -103,6 +113,16 @@ $(document).ready(function() {
       if (size === key) {
         size = value;
       }
+    }
+    if (
+      size === "​ 1-10" ||
+      bType === "Document​ ​ Storage" ||
+      bType === "Full​ ​ Text​ ​ Search" ||
+      bType === "Price"
+    ) {
+      window.location.href = "./components/Unqualified/Unqualified.html";
+    } else {
+      window.location.href = "./components/Qualified/Qualified.html";
     }
     console.log("TESTING, email: ", email, " bType: ", bType, " size: ", size);
   });
