@@ -16,6 +16,7 @@
     />
 
     <link rel="stylesheet" href="./index.css" />
+    <!-- <script src="jquery-3.3.1.min.js"></script> -->
   </head>
 
   <body>
@@ -25,6 +26,7 @@
       src="./components/Unqualified/Unqualified.js"
     ></script>
     <script defer="defer" src="./components/Home/Home.js"></script>
+
     <div>
       <header class="head-nav">
         <img
@@ -45,78 +47,73 @@
           <label for="bemail">Business Email</label>
           <input class="input-email" type="text" id="bemail" name="bemail" />
         </form>
-        <form>
-          <!-- <form>
+        <!-- <form> -->
+        <!-- <form>
             <label class="test-form" for="test">Test</label>
             <input class="test" type="radio" id="test" name="test" />
           </form> -->
-          <div>
-            <form>
-              <label for="analytics" class="analytics-label">
-                Real-time Analytics</label
-              >
-              <input
-                type="radio"
-                id="analytics"
-                name="analytics"
-                class="analytics"
-              />
-            </form>
-
-            <form>
-              <label for="query" class="query-label">
-                Query Response Time
-              </label>
-              <input type="radio" id="query" name="query" class="query" />
-            </form>
-
-            <form>
-              <label for="concurrency" class="concurrency-label"
-                >High Concurrency</label
-              >
-              <input
-                type="radio"
-                id="concurrency"
-                name="concurrency"
-                class="concurrency"
-              />
-            </form>
-            <form>
-              <label for="data" class="data-label"> Fast Data Ingest</label>
-              <input type="radio" id="data" name="data" class="data" />
-            </form>
-          </div>
-          <div>
-            <form>
-              <label for="scalability" class="scalability-label">
-                Scalability</label
-              >
-              <input
-                type="radio"
-                id="scalability"
-                name="scalability"
-                class="scalability"
-              />
-            </form>
-
-            <form>
-              <label for="storage" class="storage-label">
-                Document storage</label
-              >
-              <input type="radio" id="storage" class="storage" name="storage" />
-            </form>
-
-            <form>
-              <label for="search" class="search-label"> Full text search</label>
-              <input type="radio" id="search" class="search" name="search" />
-            </form>
-
-            <form>
-              <label for="price" class="price-label"> Price</label>
-              <input type="radio" id="price" class="price" name="price" />
-            </form>
-          </div>
+        <!-- <div> -->
+        <form onclick="grd('analytics')">
+          <label for="analytics" class="analytics-label">
+            Real-time Analytics</label
+          >
+          <input
+            type="radio"
+            id="analytics"
+            value="analytics"
+            name="analytics"
+            class="analytics"
+          />
         </form>
+
+        <!-- <form> -->
+        <label for="query" class="query-label"> Query Response Time </label>
+        <input type="radio" id="query" name="query" class="query" />
+        <!-- </form> -->
+
+        <!-- <form> -->
+        <label for="concurrency" class="concurrency-label"
+          >High Concurrency</label
+        >
+        <input
+          type="radio"
+          id="concurrency"
+          name="concurrency"
+          class="concurrency"
+        />
+        <!-- </form> -->
+        <!-- <form> -->
+        <label for="data" class="data-label"> Fast Data Ingest</label>
+        <input type="radio" id="data" name="data" class="data" />
+        <!-- </form> -->
+        <!-- </div> -->
+        <!-- <div> -->
+        <!-- <form> -->
+        <label for="scalability" class="scalability-label"> Scalability</label>
+        <input
+          type="radio"
+          id="scalability"
+          name="scalability"
+          class="scalability"
+        />
+        <!-- </form> -->
+
+        <!-- <form> -->
+        <label for="storage" class="storage-label"> Document storage</label>
+        <input type="radio" id="storage" class="storage" name="storage" />
+        <!-- </form> -->
+
+        <!-- <form> -->
+        <label for="search" class="search-label"> Full text search</label>
+        <input type="radio" id="search" class="search" name="search" />
+        <!-- </form> -->
+
+        <!-- <form> -->
+        <label for="price" class="price-label"> Price</label>
+        <input type="radio" id="price" class="price" name="price" />
+        <!-- </form> -->
+        <!-- </div> -->
+        <!-- </form> -->
 
         <!-- <img class="head-img" src="img/fontX.png" alt="Lambda school logo." />
         <img class="head-img" src="img/fontO.png" alt="Lambda school logo." /> -->

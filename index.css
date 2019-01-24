@@ -64,6 +64,14 @@ body {
   left: 312px;
   top: 694px;
 }
+.analytics {
+  position: absolute;
+  background: red;
+  width: 24px;
+  height: 24px;
+  left: 312px;
+  top: 694px;
+}
 
 .query-label {
   position: absolute;
