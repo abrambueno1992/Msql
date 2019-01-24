@@ -48,24 +48,39 @@ var grdDown = function(fID) {
 $(document).ready(function() {
   $(".btn-schedule").click(function() {
     // $(".price").hide();
-    const message = document.getElementById("bemail").value;
-
-    console.log(
-      "TESTING, email: ",
-      message,
-      document.getElementById("bemail").value
-    );
+    const email = document.getElementById("bemail").value;
+    let bType = null;
+    let size = null;
+    for (var [key, value] of track) {
+      if (value === 2) {
+        bType = key;
+      }
+    }
+    for (var [key, value] of trackDown) {
+      if (value === 2) {
+        size = key;
+      }
+    }
+    console.log("TESTING, email: ", email, " bType: ", bType, " size: ", size);
     // alert("TESTING, email: ", message, document.getElementById("bemail").value);
   });
   $(".btn-text").click(function() {
     // $(".price").hide();
     // alert("TESTING");
-    const message = document.getElementById("bemail").value;
+    const email = document.getElementById("bemail").value;
 
-    console.log(
-      "TESTING, email: ",
-      message,
-      document.getElementById("bemail").value
-    );
+    let bType = null;
+    let size = null;
+    for (var [key, value] of track) {
+      if (value === 2) {
+        bType = key;
+      }
+    }
+    for (var [key, value] of trackDown) {
+      if (value === 2) {
+        size = key;
+      }
+    }
+    console.log("TESTING, email: ", email, " bType: ", bType, " size: ", size);
   });
 });
