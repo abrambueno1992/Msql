@@ -41,28 +41,7 @@ body {
   box-sizing: border-box;
   border-radius: 4px;
 }
-.test-form {
-  position: absolute;
-  width: 148px;
-  height: 19px;
-  left: 342px;
-  top: 696px;
 
-  font-family: Lato;
-  font-style: normal;
-  font-weight: normal;
-  line-height: normal;
-  font-size: 16px;
-
-  color: #828282;
-}
-.test {
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  left: 312px;
-  top: 694px;
-}
 .analytics-label {
   position: absolute;
   width: 148px;
@@ -90,8 +69,8 @@ body {
   position: absolute;
   width: 148px;
   height: 19px;
-  left: 312px;
-  top: 735px;
+  left: 342px;
+  top: 738px;
 
   font-family: Lato;
   font-style: normal;
@@ -112,8 +91,8 @@ body {
   position: absolute;
   width: 148px;
   height: 19px;
-  left: 312px;
-  top: 775px;
+  left: 342px;
+  top: 778px;
 
   font-family: Lato;
   font-style: normal;
@@ -134,7 +113,7 @@ body {
   position: absolute;
   width: 148px;
   height: 19px;
-  left: 312px;
+  left: 342px;
   top: 818px;
 
   font-family: Lato;
@@ -156,8 +135,8 @@ body {
   position: absolute;
   width: 148px;
   height: 19px;
-  left: 526px;
-  top: 694px;
+  left: 560px;
+  top: 696px;
 
   font-family: Lato;
   font-style: normal;
@@ -179,8 +158,8 @@ body {
   position: absolute;
   width: 148px;
   height: 19px;
-  left: 526px;
-  top: 735px;
+  left: 560px;
+  top: 738px;
 
   font-family: Lato;
   font-style: normal;
@@ -201,8 +180,8 @@ body {
   position: absolute;
   width: 148px;
   height: 19px;
-  left: 526px;
-  top: 775px;
+  left: 560px;
+  top: 777px;
 
   font-family: Lato;
   font-style: normal;
@@ -223,8 +202,8 @@ body {
   position: absolute;
   width: 148px;
   height: 19px;
-  left: 526px;
-  top: 818px;
+  left: 560px;
+  top: 819px;
 
   font-family: Lato;
   font-style: normal;
