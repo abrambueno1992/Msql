@@ -7,6 +7,10 @@ var grd = function(fID, tvalue) {
     track.set(fID, 2);
   } else {
     let current = track.get(fID) + 1;
+    if (current >= 3) {
+      current = 1;
+    }
+    trackDown.set(fID, current);
     track.set(fID, current);
   }
   if (values.get(fID) === undefined) {
