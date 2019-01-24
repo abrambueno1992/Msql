@@ -25,7 +25,7 @@
       src="./components/Unqualified/Unqualified.js"
     ></script>
     <script defer="defer" src="./components/Home/Home.js"></script>
-    <div class="container">
+    <div>
       <header class="head-nav">
         <img
           class="head-img"
@@ -46,71 +46,96 @@
           <input class="input-email" type="text" id="bemail" name="bemail" />
         </form>
         <form>
+          <form>
+            <label class="test-form" for="test">Test</label>
+            <input class="test" type="radio" id="test" name="test" />
+          </form>
           <div>
-            <label for="analytics" class="container">
+            <label for="analytics" class="analytics-label">
               Real-time Analytics
               <input
                 type="radio"
                 id="analytics"
                 name="analytics"
-                checked="checked"
+                class="analytics"
               />
-              <span class="checkmark"></span>
             </label>
+            <form>
+              <label for="query" class="query-label">
+                Query Response Time
+              </label>
+              <input type="radio" id="query" name="query" class="query" />
+            </form>
 
-            <label for="query" class="container">
-              Query Response Time
-              <input type="radio" id="query" name="query" checked="checked" />
-              <span class="checkmark"></span>
-            </label>
-            <label for="concurrency" class="container">
-              High Concurrency
+            <form>
+              <label for="concurrency" class="concurrency-label"
+                >High Concurrency</label
+              >
               <input
                 type="radio"
                 id="concurrency"
                 name="concurrency"
+                class="concurrency"
+              />
+            </form>
+
+            <label for="data" class="data-label">
+              Fast Data Ingest
+              <input
+                type="radio"
+                id="data"
+                name="data"
+                class="test"
                 checked="checked"
               />
               <span class="checkmark"></span>
             </label>
-
-            <label for="data" class="container">
-              Fast Data Ingest
-              <input type="radio" id="data" name="data" checked="checked" />
-              <span class="checkmark"></span>
-            </label>
           </div>
           <div>
-            <label for="scalability" class="container">
+            <label for="scalability" class="scalability-label">
               Scalability
               <input
                 type="radio"
                 id="scalability"
                 name="scalability"
                 checked="checked"
+                class="scalability"
               />
               <span class="checkmark"></span>
             </label>
 
-            <label for="storage" class="container">
+            <label for="storage" class="storage-label">
               Document storage
               <input
                 type="radio"
                 id="storage"
+                class="test"
                 name="storage"
-                checked="checked"
+                checked="radio"
               />
               <span class="checkmark"></span>
             </label>
 
-            <label for="search" class="container">
+            <label for="search" class="search-label">
               Full text search
-              <input type="radio" id="search" name="search" checked="checked" />
+              <input
+                type="radio"
+                id="search"
+                class="test"
+                name="search"
+                checked="checked"
+              />
               <span class="checkmark"></span>
             </label>
-            <label for="price" class="container">
+            <label for="price" class="price-label">
               Price
-              <input type="radio" id="price" name="price" checked="checked" />
+              <input
+                type="radio"
+                id="price"
+                class="test"
+                name="price"
+                checked="checked"
+              />
               <span class="checkmark"></span>
             </label>
           </div>
