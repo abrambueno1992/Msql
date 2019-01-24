@@ -81,6 +81,7 @@ var grdDown = function(fID, rvalue) {
       size = value;
     }
   }
+  console.log("size", size, "bType:", bType);
   console.log(
     "check: ",
     check.toString(),
@@ -119,8 +120,12 @@ $(document).ready(function() {
         size = value;
       }
     }
-    console.log(" size: ", size, "size === 1-10", size === "1-10");
-    if (
+    console.log("size", size, "bType:", bType);
+    if (size === null || bType === null || email === "") {
+      alert(
+        "Please have an email, select from dropdown, and select business solution"
+      );
+    } else if (
       size === "1-10" ||
       bType === "Document​ ​ Storage" ||
       bType === "Full​ ​ Text​ ​ Search" ||
@@ -133,6 +138,7 @@ $(document).ready(function() {
     console.log("TESTING, email: ", email, " bType: ", bType, " size: ", size);
     // alert("TESTING, email: ", message, document.getElementById("bemail").value);
   });
+
   $(".btn-text").click(function() {
     // $(".price").hide();
     // alert("TESTING");
@@ -159,7 +165,11 @@ $(document).ready(function() {
       }
     }
     console.log(" size: ", size, "size === 1-10", size === "1-10");
-    if (
+    if (size === null || bType === null || email === "") {
+      alert(
+        "Please have an email, select from dropdown, and select business solution"
+      );
+    } else if (
       size === "1-10" ||
       bType === "Document​ ​ Storage" ||
       bType === "Full​ ​ Text​ ​ Search" ||
