@@ -30,6 +30,13 @@ body {
   position: absolute;
   left: 312px;
   top: 481px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 12px;
+
+  color: #828282;
 }
 .input-email {
   position: absolute;
@@ -40,6 +47,57 @@ body {
   border: 2px solid #47b9e8;
   box-sizing: border-box;
   border-radius: 4px;
+}
+.dropdown-label {
+  position: absolute;
+  width: 76px;
+  height: 15px;
+  left: 312px;
+  top: 554px;
+
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 12px;
+
+  color: #828282;
+}
+.dropdown-business {
+  position: absolute;
+  width: 400px;
+  height: 39px;
+  left: 312px;
+  top: 575px;
+
+  background: rgba(189, 189, 189, 0.13);
+  border-radius: 4px;
+}
+.btn-schedule {
+  position: absolute;
+  width: 400px;
+  height: 38px;
+  left: 312px;
+  top: 891px;
+
+  background: #0088bb;
+  border: 1px solid #0088bb;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.btn-text {
+  position: absolute;
+  width: 192px;
+  height: 21px;
+  left: 416px;
+  top: 903px;
+
+  font-family: FreightSansLFPro;
+  line-height: 21px;
+  font-size: 14px;
+
+  color: #ffffff;
 }
 
 .analytics-label {
