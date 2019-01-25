@@ -189,6 +189,21 @@ body {
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
+.d-10-message {
+  position: absolute;
+  width: 52px;
+  height: 173px;
+  /* left: 116px;
+  top: 132.15px; */
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 34px;
+  font-size: 14px;
+
+  color: #7d7d7d;
+}
 .dr-radio:hover {
   /* position: absolute; */
   width: 400px;
