@@ -1,10 +1,19 @@
 .head-nav {
-  background: black;
-  margin-left: 30px;
+  position: absolute;
+  min-width: 1029px;
+  min-height: 98px;
+  max-height: 98px;
+  left: -5px;
+  top: -13px;
+
+  background: #17354a;
 }
 .head-img {
-  width: 20%;
-  height: 20%;
+  position: absolute;
+  width: 124px;
+  height: 19.31px;
+  left: 30.22px;
+  top: 34.73px;
 }
 body {
   background: white;
