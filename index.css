@@ -90,6 +90,23 @@ body {
   width: 400px;
   height: 39px;
 
+  background: rgba(189, 189, 189, 0.13);
+  border-radius: 4px;
+}
+.input-email:hover {
+  position: absolute;
+  width: 400px;
+  height: 40px;
+  background: rgba(189, 189, 189, 0.24);
+  border-radius: 4px;
+}
+.input-email:focus {
+  position: absolute;
+  width: 400px;
+  height: 40px;
+  /* left: 95px;
+  top: 612.12px; */
+
   background: #ffffff;
   border: 2px solid #47b9e8;
   box-sizing: border-box;
