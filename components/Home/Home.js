@@ -105,6 +105,7 @@ $(document).ready(function() {
   $(".btn-schedule").click(function() {
     // $(".price").hide();
     const email = document.getElementById("bemail").value;
+
     let bType = null;
     let size = null;
     for (var [key, value] of track) {
@@ -125,7 +126,7 @@ $(document).ready(function() {
         size = value;
       }
     }
-    console.log("size", size, "bType:", bType);
+    console.log(" size: ", size, "size === 1-10", size === "1-10");
     if (size === null || bType === null || email === "") {
       if (email === "") {
         document.getElementById("bemail").style.border = "2px solid #D5322F";
@@ -145,7 +146,8 @@ $(document).ready(function() {
           "2px solid #D5322F";
       }
       if (size === null) {
-        document.getElementById("bemail").style.border = "2px solid #D5322F";
+        document.getElementById("dropdown-business").style.border =
+          "2px solid #D5322F";
       }
     } else if (
       size === "1-10" ||
