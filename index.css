@@ -287,14 +287,11 @@ body {
   height: 24px;
   left: 312px;
   top: 694px;
-}
-.analytics {
-  position: absolute;
-  background: red;
-  width: 24px;
-  height: 24px;
-  left: 312px;
-  top: 694px;
+
+  background: rgba(189, 189, 189, 0.13);
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 64px;
 }
 
 .query-label {
@@ -318,6 +315,11 @@ body {
   height: 24px;
   left: 312px;
   top: 735px;
+
+  background: rgba(189, 189, 189, 0.13);
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 64px;
 }
 .concurrency-label {
   position: absolute;
@@ -374,6 +376,11 @@ body {
   height: 24px;
   left: 312px;
   top: 818px;
+
+  background: rgba(189, 189, 189, 0.13);
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 64px;
 }
 .scalability-label {
   position: absolute;
@@ -396,6 +403,11 @@ body {
   height: 24px;
   left: 526px;
   top: 694px;
+
+  background: rgba(189, 189, 189, 0.13);
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 64px;
 }
 
 .storage-label {
@@ -419,6 +431,11 @@ body {
   height: 24px;
   left: 526px;
   top: 735px;
+
+  background: rgba(189, 189, 189, 0.13);
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 64px;
 }
 .search-label {
   position: absolute;
@@ -441,6 +458,11 @@ body {
   height: 24px;
   left: 526px;
   top: 775px;
+
+  background: rgba(189, 189, 189, 0.13);
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 64px;
 }
 .price-label {
   position: absolute;
@@ -463,4 +485,9 @@ body {
   height: 24px;
   left: 526px;
   top: 818px;
+
+  background: rgba(189, 189, 189, 0.13);
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 64px;
 }
