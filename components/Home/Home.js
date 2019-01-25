@@ -1,6 +1,12 @@
 const track = new Map();
 const trackDown = new Map();
 const values = new Map();
+function ValidateEmail(mail) {
+  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)) {
+    return true;
+  }
+  return false;
+}
 var grd = function(fID, tvalue) {
   const check = document.getElementById(fID).checked;
   if (track.get(fID) === undefined) {
@@ -132,9 +138,6 @@ $(document).ready(function() {
         document.getElementById("dropdown-business").style.border =
           "2px solid #D5322F";
       }
-      alert(
-        "Please have an email, select from dropdown, and select business solution"
-      );
     } else if (
       size === "1-10" ||
       bType === "Document​ ​ Storage" ||
@@ -143,7 +146,12 @@ $(document).ready(function() {
     ) {
       window.location.href = "./components/Unqualified/Unqualified.html";
     } else {
-      window.location.href = "./components/Qualified/Qualified.html";
+      let result = ValidateEmail(email);
+      if (result === true) {
+        window.location.href = "./components/Qualified/Qualified.html";
+      } else {
+        document.getElementById("bemail").style.border = "2px solid #D5322F";
+      }
     }
     console.log("TESTING, email: ", email, " bType: ", bType, " size: ", size);
     // alert("TESTING, email: ", message, document.getElementById("bemail").value);
@@ -176,9 +184,17 @@ $(document).ready(function() {
     }
     console.log(" size: ", size, "size === 1-10", size === "1-10");
     if (size === null || bType === null || email === "") {
-      alert(
-        "Please have an email, select from dropdown, and select business solution"
-      );
+      if (email === "") {
+        document.getElementById("bemail").style.border = "2px solid #D5322F";
+      }
+      if (bType === null) {
+        document.getElementById("business-type").style.border =
+          "2px solid #D5322F";
+      }
+      if (size === null) {
+        document.getElementById("dropdown-business").style.border =
+          "2px solid #D5322F";
+      }
     } else if (
       size === "1-10" ||
       bType === "Document​ ​ Storage" ||
@@ -187,7 +203,12 @@ $(document).ready(function() {
     ) {
       window.location.href = "./components/Unqualified/Unqualified.html";
     } else {
-      window.location.href = "./components/Qualified/Qualified.html";
+      let result = ValidateEmail(email);
+      if (result === true) {
+        window.location.href = "./components/Qualified/Qualified.html";
+      } else {
+        document.getElementById("bemail").style.border = "2px solid #D5322F";
+      }
     }
   });
 });
