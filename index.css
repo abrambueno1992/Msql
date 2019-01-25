@@ -321,7 +321,7 @@ body {
 }
 .concurrency-label {
   position: absolute;
-  width: 148px;
+  width: 176px;
   height: 19px;
   left: 342px;
   top: 778px;
@@ -334,12 +334,24 @@ body {
 
   color: #828282;
 }
+/* .concurrency {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 312px;
+  top: 775px;
+} */
 .concurrency {
   position: absolute;
   width: 24px;
   height: 24px;
   left: 312px;
   top: 775px;
+
+  background: rgba(189, 189, 189, 0.13);
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 64px;
 }
 .data-label {
   position: absolute;
