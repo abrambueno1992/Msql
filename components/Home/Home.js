@@ -133,6 +133,11 @@ $(document).ready(function() {
         let result = ValidateEmail(email);
         if (result === false) {
           document.getElementById("bemail").style.border = "2px solid #D5322F";
+          var div = document.createElement("div");
+          div.innerHTML = "Please enter a valid email address";
+          div.style =
+            "position:absolute; top: 58px; width: 296px; height: 15px; color:#D5322F; font-family: FontAwesome; font-style: normal; font-weight: normal; line-height: normal; font-size: 14px;";
+          document.getElementById("input-email-form").appendChild(div);
         }
       }
       if (bType === null) {
@@ -140,8 +145,7 @@ $(document).ready(function() {
           "2px solid #D5322F";
       }
       if (size === null) {
-        document.getElementById("dropdown-business").style.border =
-          "2px solid #D5322F";
+        document.getElementById("bemail").style.border = "2px solid #D5322F";
       }
     } else if (
       size === "1-10" ||
@@ -156,6 +160,11 @@ $(document).ready(function() {
         window.location.href = "./components/Qualified/Qualified.html";
       } else {
         document.getElementById("bemail").style.border = "2px solid #D5322F";
+        var div = document.createElement("div");
+        div.innerHTML = "Please enter a valid email address";
+        div.style =
+          "position:absolute; top: 58px; width: 296px; height: 15px; color:#D5322F; font-family: FontAwesome; font-style: normal; font-weight: normal; line-height: normal; font-size: 14px;";
+        document.getElementById("input-email-form").appendChild(div);
       }
     }
     console.log("TESTING, email: ", email, " bType: ", bType, " size: ", size);
@@ -195,6 +204,11 @@ $(document).ready(function() {
         let result = ValidateEmail(email);
         if (result === false) {
           document.getElementById("bemail").style.border = "2px solid #D5322F";
+          var div = document.createElement("div");
+          div.innerHTML = "Please enter a valid email address";
+          div.style =
+            "position:absolute; top: 58px; width: 296px; height: 15px; color:#D5322F; font-family: FontAwesome; font-style: normal; font-weight: normal; line-height: normal; font-size: 14px;";
+          document.getElementById("input-email-form").appendChild(div);
         }
       }
       if (bType === null) {
@@ -218,6 +232,11 @@ $(document).ready(function() {
         window.location.href = "./components/Qualified/Qualified.html";
       } else {
         document.getElementById("bemail").style.border = "2px solid #D5322F";
+        var div = document.createElement("div");
+        div.innerHTML = "Please enter a valid email address";
+        div.style =
+          "position:absolute; top: 58px; width: 296px; height: 15px; color:#D5322F; font-family: FontAwesome; font-style: normal; font-weight: normal; line-height: normal; font-size: 14px;";
+        document.getElementById("input-email-form").appendChild(div);
       }
     }
   });
