@@ -2,6 +2,10 @@ const track = new Map();
 const trackDown = new Map();
 const values = new Map();
 var grd = function(fID, tvalue) {
+  if (document.getElementById(fID).checked === null) {
+    document.getElementById(fID).type = "checked";
+    document.getElementById(fID).checked = false;
+  }
   const check = document.getElementById(fID).checked;
   if (track.get(fID) === undefined) {
     track.set(fID, 2);
@@ -31,6 +35,10 @@ var grd = function(fID, tvalue) {
   }
 };
 var grdDown = function(fID, rvalue) {
+  if (document.getElementById(fID) === null) {
+    document.getElementById(fID).type = "checked";
+    document.getElementById(fID).checked = false;
+  }
   const check = document.getElementById(fID).checked;
 
   if (trackDown.get(fID) === undefined) {
