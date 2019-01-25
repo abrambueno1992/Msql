@@ -2,10 +2,6 @@ const track = new Map();
 const trackDown = new Map();
 const values = new Map();
 var grd = function(fID, tvalue) {
-  if (document.getElementById(fID).checked === null) {
-    document.getElementById(fID).type = "checked";
-    document.getElementById(fID).checked = false;
-  }
   const check = document.getElementById(fID).checked;
   if (track.get(fID) === undefined) {
     track.set(fID, 2);
@@ -35,10 +31,6 @@ var grd = function(fID, tvalue) {
   }
 };
 var grdDown = function(fID, rvalue) {
-  if (document.getElementById(fID) === null) {
-    document.getElementById(fID).type = "checked";
-    document.getElementById(fID).checked = false;
-  }
   const check = document.getElementById(fID).checked;
 
   if (trackDown.get(fID) === undefined) {
@@ -56,12 +48,11 @@ var grdDown = function(fID, rvalue) {
   const num = trackDown.get(fID);
   if (check === false && num % 2 === 0) {
     document.getElementById(fID).checked = true;
+    document.getElementById("dropdown-title").innerHTML = rvalue;
   }
   if (check === true && num % 2 !== 0) {
     document.getElementById(fID).checked = false;
-    console.log("false to true", trackDown.get(fID));
-    // trackDown.set(fID, 1);
-    console.log("false to true", trackDown.get(fID));
+    document.getElementById("dropdown-title").innerHTML = "Select Option";
   }
   for (var [key, value] of trackDown) {
     if (key !== fID) {

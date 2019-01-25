@@ -139,7 +139,21 @@ body {
   border-radius: 4px;
   /*  */
 }
+.dropdown-title {
+  position: absolute;
+  width: 148px;
+  height: 19px;
+  left: 325px;
+  top: 584px;
 
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 16px;
+
+  color: #828282;
+}
 .dropbtn {
   /* background-color: #4caf50;
   color: white;
