@@ -129,6 +129,11 @@ $(document).ready(function() {
     if (size === null || bType === null || email === "") {
       if (email === "") {
         document.getElementById("bemail").style.border = "2px solid #D5322F";
+      } else {
+        let result = ValidateEmail(email);
+        if (result === false) {
+          document.getElementById("bemail").style.border = "2px solid #D5322F";
+        }
       }
       if (bType === null) {
         document.getElementById("business-type").style.border =
@@ -186,6 +191,11 @@ $(document).ready(function() {
     if (size === null || bType === null || email === "") {
       if (email === "") {
         document.getElementById("bemail").style.border = "2px solid #D5322F";
+      } else {
+        let result = ValidateEmail(email);
+        if (result === false) {
+          document.getElementById("bemail").style.border = "2px solid #D5322F";
+        }
       }
       if (bType === null) {
         document.getElementById("business-type").style.border =
