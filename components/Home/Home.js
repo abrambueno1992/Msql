@@ -121,6 +121,17 @@ $(document).ready(function() {
     }
     console.log("size", size, "bType:", bType);
     if (size === null || bType === null || email === "") {
+      if (email === "") {
+        document.getElementById("bemail").style.border = "2px solid #D5322F";
+      }
+      if (bType === null) {
+        document.getElementById("business-type").style.border =
+          "2px solid #D5322F";
+      }
+      if (size === null) {
+        document.getElementById("dropdown-business").style.border =
+          "2px solid #D5322F";
+      }
       alert(
         "Please have an email, select from dropdown, and select business solution"
       );
