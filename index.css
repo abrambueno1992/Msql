@@ -121,6 +121,17 @@ body {
   box-sizing: border-box;
   border-radius: 4px;
 }
+input:not([value=""]) .input-email {
+  position: absolute;
+  width: 400px;
+  height: 40px;
+  left: 95.5px;
+  top: 702.52px;
+
+  background: rgba(189, 189, 189, 0.13);
+  border-radius: 4px;
+}
+
 .dropdown-label {
   position: absolute;
   width: 76px;
