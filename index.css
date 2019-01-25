@@ -203,8 +203,8 @@ body {
   position: absolute;
   width: 400px;
   height: 191px;
-  /* left: 95px;
-  top: 114px; */
+  /* left: 95px; */
+  top: 19px;
 
   background: #ffffff;
   border: 1px solid #bdbdbd;
@@ -275,9 +275,6 @@ body {
   display: block;
 }
 
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
-}
 .btn-schedule {
   position: absolute;
   width: 400px;
